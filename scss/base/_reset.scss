@@ -1,25 +1,41 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixin";
 @import "../components/buttons";
 @import "../components/carousel";
 @import "../components/loader";
+@import "../layout/header";
 
-/*FONTS*/
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 
-.container-sm{
-  max-width: 1200px !important;
-  @media screen and(min-width:500px) {
-  padding: 0 70px;
-  }
+.container-sm {
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 17px !important;
+  padding-right: 17px !important;
 }
 
 a {
   text-decoration: none !important;
 }
 
+@media (max-width: 992px) {
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-sm {
+    max-width: 540px !important;
+  }
+}

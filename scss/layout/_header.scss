@@ -1,0 +1,82 @@
+@import "../abstracts/variables";
+
+header {
+    top: 0;
+    background: #fff;
+    position: sticky;
+    transition: $transition-time;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.burger {
+    display: none;
+    padding: 10px 25px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 17px 27px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    transition: $transition-time;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.burger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.burger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.burger.is-active .bar {
+	opacity: 0;
+}
+
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+@media (max-width: 1200px) {
+    .container-sm {
+        max-width: 1140px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
