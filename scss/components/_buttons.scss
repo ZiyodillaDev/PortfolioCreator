@@ -1,12 +1,18 @@
+@import "../abstracts/variables";
 button {
   border: none;
 }
 
-// .btn1 {
-//   background: $btn-color;
-//   border-radius: 25px;
-//   width: 140px;
-//   height: 60px;
-//   cursor: pointer;
-//   color: white;
-// }
+.btn1{
+  padding: 17px 30px;
+  background: transparent;
+  transition: $transition-time;
+  color: #000;
+  font-size: 19px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn1:hover{
+  background: #000 !important;
+  color: white;
+}
