@@ -68,3 +68,14 @@ testNext.addEventListener('click', () => {
   nextContent.style.display = "flex";
   nextContent.classList.add(".transition")
 })
+
+// Backtop}
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () =>{ 
+    if (window.pageYOffset > 300) {
+        toTop.classList.add("active");
+    } else{
+        toTop.classList.remove("active");
+    }
+})
