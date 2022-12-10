@@ -159,6 +159,7 @@ header {
   }
   .toggle-button {
     display: flex;
+    cursor: pointer;
   }
   .navbar-links {
     display: none;
@@ -300,6 +301,7 @@ header {
   }
   .toggle-button {
     display: flex;
+    cursor: pointer;
   }
   .navbar-links {
     display: none;
@@ -676,20 +678,30 @@ button {
 }
 .products .main-pic {
   width: 100%;
-  max-height: 900px;
+  max-height: 800px;
   height: 100%;
 }
 
+@media screen and (min-width: 945px) {
+  .main-pic {
+    min-width: 900px !important;
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 800px;
+    height: 100%;
+  }
+}
 .indicators {
   display: flex;
   gap: 22px;
 }
 .indicators img {
-  max-width: 100%;
-  width: 210px;
-  max-height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 100% !important;
+  width: 210px !important;
+  max-height: 150px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 #education-and-work .eaw {
@@ -912,6 +924,7 @@ button {
 }
 #faq .faq__box__inner {
   display: flex;
+  cursor: pointer;
   gap: 100px;
   justify-content: space-between !important;
   align-items: center;
@@ -928,7 +941,28 @@ button {
   width: 15px !important;
   height: 10px !important;
 }
+#faq .faq__box__inner span {
+  display: none;
+}
 
+@media screen and (max-width: 1000px) {
+  .faq__box {
+    flex-direction: column;
+    align-content: center !important;
+  }
+  .faq__box__box1 {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    width: 100%;
+  }
+  .faq__box__box2 {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .to-top {
   position: relative;
   background-color: black;
@@ -984,4 +1018,18 @@ button {
   height: 14px;
   background-color: rgb(79, 42, 212);
   border-radius: 5px 70px 5px 70px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #c3c3c3;
+  height: calc(100vh - 300px);
+}
+
+body::-webkit-scrollbar-track {
+  background: dimgrey;
 }/*# sourceMappingURL=index.css.map */

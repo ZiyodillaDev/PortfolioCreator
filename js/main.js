@@ -38,7 +38,9 @@ next.addEventListener('click', () => {
   lastCarousel.style.gap = "10px";
 })
 
-// PAgination
+
+
+// Pagination
 
 const indicators = document.querySelectorAll(".indicators a");
 
@@ -69,13 +71,25 @@ testNext.addEventListener('click', () => {
   nextContent.classList.add(".transition")
 })
 
-// Backtop}
+// Accordion
+let accordion = document.querySelectorAll("#box")
+let span = document.querySelectorAll("span")
+
+for (i of accordion) {
+  accordion.addEventListener("click", () => {
+    span.style.display = "block"
+  })
+
+}
+
+
+// Backtop
 const toTop = document.querySelector(".to-top");
 
-window.addEventListener("scroll", () =>{ 
-    if (window.pageYOffset > 300) {
-        toTop.classList.add("active");
-    } else{
-        toTop.classList.remove("active");
-    }
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 300) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
 })
