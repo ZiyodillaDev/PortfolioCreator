@@ -51,8 +51,8 @@ header {
 .toggle-button {
     position: absolute;
     top: 25px;
-    right: 1rem;
-    display: none;
+    right: 0.1rem;
+    display: none !important;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -74,9 +74,10 @@ header {
 }
 
 .toggle-button .bar::after {
-    display: none;
+    display: none !important;
 }
 
+    
 
 @media (max-width: 1000px) {
     .navbar {
@@ -85,7 +86,7 @@ header {
     }
 
     .toggle-button {
-        display: flex;
+        display: flex !important;
         cursor: pointer;
     }
 
@@ -125,3 +126,21 @@ header {
     padding: 5px 0 !important;
   }
   
+  @media screen and (min-width:100px) {
+      .dn{
+display: none;
+    }
+    .right{
+        margin-right: 40px;
+    }
+   .brs1{
+transform: rotate(45deg) translate(11px,20px);
+   }
+   .brs2{
+transform: rotate(-45deg) translate(-8px)
+
+   }
+    }
+    .ul{
+        z-index: 999999999999 !important;
+    }

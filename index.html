@@ -1,411 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Creator</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
-<body>
+  <body>
     <div class="loader_bg">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
     <header id="navbar">
-        <div class="container-sm">
-            <nav class="navbar">
-                <div class="brand-title">Portfolio Creator</div>
-                <div class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <div class="navbar-links">
-                    <ul>
-                        <li class="home"><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#testimonial">Testmonial</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+      <div class="container-sm">
+        <nav class="navbar">
+          <div class="brand-title">Portfolio Creator</div>
+          <div class="toggle-button">
+            <span class="bar bar3"></span>
+            <span class="bar bars1"></span>
+            <span class="bar bars2"></span>
+          </div>
+          <div class="navbar-links">
+            <ul class="ul">
+              <li class="home"><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#testimonial">Testmonial</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-        <section id="home">
-            <div class="container-sm home">
-                <div class="home__left">
-                    <h1 class="home__left__text coloured">I design products</h1>
-                    <h2 class="home__left__text">that delight and inspire people.</h2>
-                    <p class="home__left__desc">Hi! I’m Jake, a product designer based in Berlin. I create user-friendly
-                        interfaces for fast-growing startups.</p>
-                    <div class="home__left__links">
-                        <button type="button" class="btn1">Book a call</button>
-                        <button type="button" class="btn1">Download CV</button>
-                    </div>
-                </div>
-                <div class="home__right">
-                    <img class="home__right__img" src="./images/hero-img.png" alt="...">
-                </div>
+      <section id="home">
+        <div class="container-sm home">
+          <div class="home__left">
+            <h1 class="home__left__text coloured">I design products</h1>
+            <h2 class="home__left__text">that delight and inspire people.</h2>
+            <p class="home__left__desc">
+              Hi! I’m Jake, a product designer based in Berlin. I create
+              user-friendly interfaces for fast-growing startups.
+            </p>
+            <div class="home__left__links">
+              <button type="button" class="btn1">Book a call</button>
+              <button type="button" class="btn1">Download CV</button>
             </div>
-        </section>
-        <section id="services">
-            <div class="container-sm">
-                <h3 class="title">Services</h3>
-                <h2 class="desc">Design that solves problems, one product at a time.</h2>
-                <div class="services">
-                    <div class="services__first">
-                        <img src="./images/ser1.png" alt="...">
-                        <h3 class="service-title">What I can do for you</h3>
-                        <p class="service-desc">Faster, better products that your users love. Here's all the services I
-                            provide:</p>
-                        <ul>
-                            <li>Design Strategy</li>
-                            <li>Web and Mobile App Design</li>
-                            <li>Front-end Development</li>
-                        </ul>
-                    </div>
-                    <div class="services__second">
-                        <img src="./images/ser2.png" alt="...">
-                        <h3 class="service-title">Applications I'm fluent in</h3>
-                        <p class="service-desc">Every designer needs the right tools to do the perfect job I'm
-                            multilingual.</p>
-                        <ul>
-                            <li>Sketch</li>
-                            <li>Webflow</li>
-                            <li>Figma</li>
-                        </ul>
-                    </div>
-                    <div class="services__third">
-                        <img src="./images/ser3.png" alt="...">
-                        <h3 class="service-title">What you can expect</h3>
-                        <p class="service-desc">Faster, better products that your users love Here's the services I
-                            provide:</p>
-                        <ul>
-                            <li>Clean and functional</li>
-                            <li>Device and user friendly</li>
-                            <li>Efficient and maintainable</li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+          <div class="home__right">
+            <img
+              class="home__right__img"
+              src="./images/hero-img.png"
+              alt="..."
+            />
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container-sm">
+          <h3 class="title">Services</h3>
+          <h2 class="desc">
+            Design that solves problems, one product at a time.
+          </h2>
+          <div class="services">
+            <div class="services__first">
+              <img src="./images/ser1.png" alt="..." />
+              <h3 class="service-title">What I can do for you</h3>
+              <p class="service-desc">
+                Faster, better products that your users love. Here's all the
+                services I provide:
+              </p>
+              <ul>
+                <li>Design Strategy</li>
+                <li>Web and Mobile App Design</li>
+                <li>Front-end Development</li>
+              </ul>
             </div>
-        </section>
-        <section id="projects">
-            <div class="container-sm projects">
-                <h3 class="project-title">PROJECTS</h3>
-                <div class="title-div">
-                    <div>
-                        <h2 class="titles">I bring results.</h2>
-                        <h2 class="titles">My clients are proof.</h2>
-                    </div>
-                    <div class="title-link">
-                        <button type="button" class="btn1">View all projects</button>
-                    </div>
+            <div class="services__second">
+              <img src="./images/ser2.png" alt="..." />
+              <h3 class="service-title">Applications I'm fluent in</h3>
+              <p class="service-desc">
+                Every designer needs the right tools to do the perfect job I'm
+                multilingual.
+              </p>
+              <ul>
+                <li>Sketch</li>
+                <li>Webflow</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <div class="services__third">
+              <img src="./images/ser3.png" alt="..." />
+              <h3 class="service-title">What you can expect</h3>
+              <p class="service-desc">
+                Faster, better products that your users love Here's the services
+                I provide:
+              </p>
+              <ul>
+                <li>Clean and functional</li>
+                <li>Device and user friendly</li>
+                <li>Efficient and maintainable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container-sm projects">
+          <h3 class="project-title">PROJECTS</h3>
+          <div class="title-div">
+            <div>
+              <h2 class="titles">I bring results.</h2>
+              <h2 class="titles">My clients are proof.</h2>
+            </div>
+            <div class="title-link">
+              <button type="button" class="btn1">View all projects</button>
+            </div>
+          </div>
+          <div class="projects-box">
+            <div class="first-carousel">
+              <div class="box box1">
+                <img class="img" src="./images/proj1.png" alt="" />
+                <div class="inner-box">
+                  <h4 class="box__name">Branding</h4>
+                  <h2 class="box__title">Soulful Rebrand</h2>
+                  <div class="box__linnk">
+                    <a class="views-link" href="#">View Project</a>
+                    <a class="views-right" href="#"
+                      ><img src="./images/hero-link.png" alt="..."
+                    /></a>
+                  </div>
                 </div>
-                <div class="projects-box">
-                    <div class="first-carousel">
-                        <div class="box box1">
-                            <img class="img" src="./images/proj1.png" alt="">
-                            <div class="inner-box">
-                                <h4 class="box__name">Branding</h4>
-                                <h2 class="box__title">Soulful Rebrand</h2>
-                                <div class="box__linnk">
-                                    <a class="views-link" href="#">View Project</a>
-                                    <a class="views-right" href="#"><img src="./images/hero-link.png" alt="..."></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box box2">
-                            <img class="img" src="./images/proj2.png" alt="">
-                            <div class="inner-box">
-                                <h4 class="box__name">Product Design</h4>
-                                <h2 class="box__title">Datadash Product design</h2>
-                                <div class="box__linnk">
-                                    <a class="views-link" href="#">View Project</a>
-                                    <a class="views-right" href="#"><img src="./images/hero-link.png" alt="..."></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box box3">
-                            <img class="img" src="./images/proj3.png" alt="">
-                            <div class="inner-box">
-                                <h4 class="box__name">Web Design</h4>
-                                <h2 class="box__title">Maize Website Design</h2>
-                                <div class="box__linnk">
-                                    <a class="views-link" href="#">View Project</a>
-                                    <a class="views-right" href="#"><img src="./images/hero-link.png" alt="..."></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="last-carousel">
-                        <div class="box box4"> <img class="img" src="./images/proj4.jpeg" alt="">
-                            <div class="inner-box">
-                                <h4 class="box__name">Branding</h4>
-                                <h2 class="box__title">Soulful Rebrand</h2>
-                                <div class="box__linnk">
-                                    <a class="views-link" href="#">View Project</a>
-                                    <a class="views-right" href="#"><img src="./images/hero-link.png" alt="..."></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box box5">
-                            <img class="img" src="./images/proj5.jpeg" alt="">
-                            <div class="inner-box">
-                                <h4 class="box__name">Branding</h4>
-                                <h2 class="box__title">Soulful Rebrand</h2>
-                                <div class="box__linnk">
-                                    <a class="views-link" href="#">View Project</a>
-                                    <a class="views-right" href="#"><img src="./images/hero-link.png" alt="..."></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box box6">
-                            <img class="img" src="./images/proj6.jpeg" alt="">
-                            <div class="inner-box">
-                                <h4 class="box__name">Branding</h4>
-                                <h2 class="box__title">Soulful Rebrand</h2>
-                                <div class="box__linnk">
-                                    <a class="views-link" href="#">View Project</a>
-                                    <a class="views-right" href="#"><img src="./images/hero-link.png" alt="..."></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="box box2">
+                <img class="img" src="./images/proj2.png" alt="" />
+                <div class="inner-box">
+                  <h4 class="box__name">Product Design</h4>
+                  <h2 class="box__title">Datadash Product design</h2>
+                  <div class="box__linnk">
+                    <a class="views-link" href="#">View Project</a>
+                    <a class="views-right" href="#"
+                      ><img src="./images/hero-link.png" alt="..."
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="box box3">
+                <img class="img" src="./images/proj3.png" alt="" />
+                <div class="inner-box">
+                  <h4 class="box__name">Web Design</h4>
+                  <h2 class="box__title">Maize Website Design</h2>
+                  <div class="box__linnk">
+                    <a class="views-link" href="#">View Project</a>
+                    <a class="views-right" href="#"
+                      ><img src="./images/hero-link.png" alt="..."
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="last-carousel">
+              <div class="box box4">
+                <img class="img" src="./images/proj4.jpeg" alt="" />
+                <div class="inner-box">
+                  <h4 class="box__name">Branding</h4>
+                  <h2 class="box__title">Soulful Rebrand</h2>
+                  <div class="box__linnk">
+                    <a class="views-link" href="#">View Project</a>
+                    <a class="views-right" href="#"
+                      ><img src="./images/hero-link.png" alt="..."
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="box box5">
+                <img class="img" src="./images/proj5.jpeg" alt="" />
+                <div class="inner-box">
+                  <h4 class="box__name">Branding</h4>
+                  <h2 class="box__title">Soulful Rebrand</h2>
+                  <div class="box__linnk">
+                    <a class="views-link" href="#">View Project</a>
+                    <a class="views-right" href="#"
+                      ><img src="./images/hero-link.png" alt="..."
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="box box6">
+                <img class="img" src="./images/proj6.jpeg" alt="" />
+                <div class="inner-box">
+                  <h4 class="box__name">Branding</h4>
+                  <h2 class="box__title">Soulful Rebrand</h2>
+                  <div class="box__linnk">
+                    <a class="views-link" href="#">View Project</a>
+                    <a class="views-right" href="#"
+                      ><img src="./images/hero-link.png" alt="..."
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carouselPrew carousel-item">
+              <img src="./images/carousel-prew.png" alt=".." />
+            </div>
+            <div class="carouselNext carousel-item">
+              <img src="./images/carousel-next.png" alt=".." />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container-sm products">
+          <div class="products__header">
+            <div class="products__header__left">
+              <h3 class="products__header__left__title1">Product Designer</h3>
+              <h2 class="products__header__left__title2">That's me!</h2>
+            </div>
+            <div class="products__header__right">
+              <p class="products__header__right__desc">
+                Over the past 12 years, I've worked with a diverse range of
+                clients, from startups to Fortune 500 companies. I love crafting
+                interfaces that delight users and help businesses grow.
+              </p>
+            </div>
+          </div>
+          <div class="products__main">
+            <div id="show">
+              <img class="main-pic" src="./images/product1.svg" alt=".." />
+            </div>
+            <div class="indicators">
+              <a href=""><img src="./images/product2.svg" alt="..." /></a>
+              <a href=""><img src="./images/product3.svg" alt="..." /></a>
+              <a href=""><img src="./images/product4.svg" alt="..." /></a>
+              <a href=""><img src="./images/product5.svg" alt="..." /></a>
+              <a href=""><img src="./images/product6.svg" alt="..." /></a>
+              <a href=""><img src="./images/product7.svg" alt="..." /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education-and-work">
+        <div class="container-sm eaw">
+          <div id="education">
+            <span>📚 Education</span>
+            <div class="edu edu1">
+              <div class="edu__name">
+                <h3>Stanford University</h3>
+                <img src="./images/to-top-left.png" alt=".." />
+              </div>
+              <div class="edu__desc">
+                <p>MSc (Human Computer Interaction)</p>
+                <p class="data">• 2013-2015</p>
+              </div>
+            </div>
+            <div class="edu edu2">
+              <div class="edu__name">
+                <h3>MIT Summer School</h3>
+                <img src="./images/to-top-left.png" alt=".." />
+              </div>
+              <div class="edu__desc">
+                <p>UX Training Bootcamp</p>
+                <p class="data">• 2013-2015</p>
+              </div>
+            </div>
+            <div class="edu edu3">
+              <div class="edu__name">
+                <h3>California State University</h3>
+                <img src="./images/to-top-left.png" alt=".." />
+              </div>
+              <div class="edu__desc">
+                <p>BSc in Software Engineering</p>
+                <p class="data">• 2013-2015</p>
+              </div>
+            </div>
+          </div>
+          <div id="experience">
+            <span>💼 Work Experience</span>
+            <div class="edu edu1">
+              <div class="edu__name">
+                <h3>SpaceFleet</h3>
+                <img src="./images/to-top-left.png" alt=".." />
+              </div>
+              <div class="edu__desc">
+                <p>Senior Product Designer</p>
+                <p class="data">• April 2019 - Current</p>
+              </div>
+            </div>
+            <div class="edu edu2">
+              <div class="edu__name">
+                <h3>MusicMash</h3>
+                <img src="./images/to-top-left.png" alt=".." />
+              </div>
+              <div class="edu__desc">
+                <p>Information Architect</p>
+                <p class="data">• April 2019 - Current</p>
+              </div>
+            </div>
+            <div class="edu edu3">
+              <div class="edu__name">
+                <h3>Kingdom</h3>
+                <img src="./images/to-top-left.png" alt=".." />
+              </div>
+              <div class="edu__desc">
+                <p>UI Designer</p>
+                <p class="data">• April 2019 - Current</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial">
+        <div class="container-sm testimonial">
+          <h3 class="testimonial__title">Testimonials</h3>
+          <h2 class="testimonial__title2">Word on the street</h2>
+          <div class="testimonial__box">
+            <div class="testimonial__box__left">
+              <img src="./images/testimonilals.png" alt="..." />
+            </div>
+            <div class="testimonial__box__right">
+              <img src="./images/quote.png" alt=".." />
+              <span class="testimonial__box__right__content"
+                >Jade helped us build a software so intuitive that it didn't
+                need a walkthrough. He solved complex problems with brilliant
+                design.</span
+              >
+              <span class="testimonial__box__right__content2"
+                >I have helped myself to build a harware so due to this there
+                was no bug expected and i have done it easliy without
+                anyone</span
+              >
+              <div class="testimonial-carousel">
+                <div>
+                  <h3>John Frankin</h3>
+                  <p>Founder, Double Bunch</p>
                 </div>
                 <div class="carousel">
-                    <div class="carouselPrew carousel-item">
-                        <img src="./images/carousel-prew.png" alt="..">
-                    </div>
-                    <div class="carouselNext carousel-item">
-                        <img src="./images/carousel-next.png" alt="..">
-                    </div>
+                  <div class="test-prew carousel-item">
+                    <img src="./images/carousel-prew.png" alt=".." />
+                  </div>
+                  <div class="test-next carousel-item">
+                    <img src="./images/carousel-next.png" alt=".." />
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <section id="about">
-            <div class="container-sm products">
-                <div class="products__header">
-                    <div class="products__header__left">
-                        <h3 class="products__header__left__title1">Product Designer</h3>
-                        <h2 class="products__header__left__title2">That's me!</h2>
-                    </div>
-                    <div class="products__header__right">
-                        <p class="products__header__right__desc">Over the past 12 years, I've worked with a diverse
-                            range of clients, from startups to Fortune 500 companies. I love crafting interfaces that
-                            delight users and help businesses grow.</p>
-                    </div>
-                </div>
-                <div class="products__main">
-                    <div id="show">
-                        <img class="main-pic" src="./images/product1.svg" alt=".." />
-                    </div>
-                    <div class="indicators">
-                        <a href=""><img src="./images/product2.svg" alt="..." /></a>
-                        <a href="">
-                            <img src="./images/product3.svg" alt="..." />
-                            <a href="">
-                                <img src="./images/product4.svg" alt="..." />
-                                <a href="">
-                                    <img src="./images/product5.svg" alt="..." />
-                                    <a href="">
-                                        <img src="./images/product6.svg" alt="..." />
-                                    </a>
-                                    <a href="">
-                                        <img src="./images/product7.svg" alt="..." />
-                                    </a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="container-sm faq">
+          <h3 class="faq__title">FAQ</h3>
+          <h2 class="faq__title2">Frequently asked questions</h2>
+          <div class="faq__box">
+            <div class="faq__box1">
+              <button class="accordion">
+                What type of projects do you take on?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">What is your hourly rate?</button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">What time-zone do you work in?</button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                What is the typical timeline for a project?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
             </div>
-        </section>
-        <section id="education-and-work">
-            <div class="container-sm eaw">
-                <div id="education">
-                    <span>📚 Education</span>
-                    <div class="edu edu1">
-                        <div class="edu__name">
-                            <h3>Stanford University</h3>
-                            <img src="./images/to-top-left.png" alt="..">
-                        </div>
-                        <div class="edu__desc">
-                            <p>MSc (Human Computer Interaction)</p>
-                            <p class="data">• 2013-2015</p>
-                        </div>
-                    </div>
-                    <div class="edu edu2">
-                        <div class="edu__name">
-                            <h3>MIT Summer School</h3>
-                            <img src="./images/to-top-left.png" alt="..">
-                        </div>
-                        <div class="edu__desc">
-                            <p>UX Training Bootcamp</p>
-                            <p class="data">• 2013-2015</p>
-                        </div>
-                    </div>
-                    <div class="edu edu3">
-                        <div class="edu__name">
-                            <h3>California State University</h3>
-                            <img src="./images/to-top-left.png" alt="..">
-                        </div>
-                        <div class="edu__desc">
-                            <p>BSc in Software Engineering</p>
-                            <p class="data">• 2013-2015</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="experience">
-                    <span>💼 Work Experience</span>
-                    <div class="edu edu1">
-                        <div class="edu__name">
-                            <h3>SpaceFleet</h3>
-                            <img src="./images/to-top-left.png" alt="..">
-                        </div>
-                        <div class="edu__desc">
-                            <p>Senior Product Designer</p>
-                            <p class="data">• April 2019 - Current</p>
-                        </div>
-                    </div>
-                    <div class="edu edu2">
-                        <div class="edu__name">
-                            <h3>MusicMash</h3>
-                            <img src="./images/to-top-left.png" alt="..">
-                        </div>
-                        <div class="edu__desc">
-                            <p>Information Architect</p>
-                            <p class="data">• April 2019 - Current</p>
-                        </div>
-                    </div>
-                    <div class="edu edu3">
-                        <div class="edu__name">
-                            <h3>Kingdom</h3>
-                            <img src="./images/to-top-left.png" alt="..">
-                        </div>
-                        <div class="edu__desc">
-                            <p>UI Designer</p>
-                            <p class="data">• April 2019 - Current</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="faq__box2">
+              <button class="accordion">
+                How do you charge for projects ?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                What does your design process look like?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                What metrics do you use to measure success?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                What if I need help after the project is complete?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
             </div>
-        </section>
-        <section id="testimonial">
-            <div class="container-sm testimonial">
-                <h3 class="testimonial__title">Testimonials</h3>
-                <h2 class="testimonial__title2">Word on the street</h2>
-                <div class="testimonial__box">
-                    <div class="testimonial__box__left">
-                        <img src="./images/testimonilals.png" alt="...">
-                    </div>
-                    <div class="testimonial__box__right">
-                        <img src="./images/quote.png" alt="..">
-                        <span class="testimonial__box__right__content">Jade helped us build a software so intuitive that
-                            it didn't need a walkthrough. He solved complex problems with brilliant design.</span>
-                        <span class="testimonial__box__right__content2">I have helped myself to build a harware so due
-                            to this there was no bug expected and i have done it easliy without anyone</span>
-                        <div class="testimonial-carousel">
-                            <div>
-                                <h3>John Frankin</h3>
-                                <p>Founder, Double Bunch</p>
-                            </div>
-                            <div class="carousel">
-                                <div class="test-prew carousel-item">
-                                    <img src="./images/carousel-prew.png" alt="..">
-                                </div>
-                                <div class="test-next carousel-item">
-                                    <img src="./images/carousel-next.png" alt="..">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="faq">
-            <div class="container-sm faq">
-                <h3 class="faq__title">FAQ</h3>
-                <h2 class="faq__title2">Frequently asked questions</h2>
-                <div class="faq__box">
-                    <div class="faq__box1">
-                        <div class="faq__box__inner inner1" id="box box1">
-                            <h2 class="question">What type of projects do you take on?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                        <div class="faq__box__inner inner2" id="box box2">
-                            <h2 class="question">What is your hourly rate?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                        <div class="faq__box__inner inner3" id="box box3">
-                            <h2 class="question">What time-zone do you work in?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                        <div class="faq__box__inner inner4" id="box box4">
-                            <h2 class="question">What is the typical timeline for a project?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                    </div>
-                    <div class="faq__box2">
-                        <div class="faq__box__inner inner5" id="box box5">
-                            <h2 class="question">How do you charge for projects ?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                        <div class="faq__box__inner inner6" id="box box6">
-                            <h2 class="question">What does your design process look like?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                        <div class="faq__box__inner inner7" id="box box7">
-                            <h2 class="question">What metrics do you use to measure success?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                        <div class="faq__box__inner inner8" id="box box8">
-                            <h2 class="question">What type of projects do you take on?</h2>
-                            <img src="./images/accordion-pic.png" alt="...">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea delectus odit necessitatibus perferendis mollitia voluptatem omnis ipsum voluptatibus minus soluta.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <a href="#" class="to-top">
-            <div class="br"></div>
-            <div class="g"></div>
-            <div class="o"></div>
-            <div class="l"></div>
-          </a>
+          </div>
+        </div>
+      </section>
+      <a href="#" class="to-top">
+        <div class="br"></div>
+        <div class="g"></div>
+        <div class="o"></div>
+        <div class="l"></div>
+      </a>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        setTimeout(function () {
-            $(".loader_bg").fadeToggle();
-        }, 2000);
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 2000);
     </script>
     <script>
-        var loader = document.querySelector(".loader")
+      var loader = document.querySelector(".loader");
 
-        window.addEventListener("load", vanish);
+      window.addEventListener("load", vanish);
 
-        function vanish() {
-            loader.classList.add("dissapear");
-        }
+      function vanish() {
+        loader.classList.add("dissapear");
+      }
     </script>
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,9 +1,16 @@
 // Hamburger menu toggle
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const bar3 = document.querySelector(".bar3")
+const bars1 = document.querySelector(".bars1")
+const bars2 = document.querySelector(".bars2")
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
+  bar3.classList.toggle('dn')
+  bars1.classList.toggle('brs1')
+  bars2.classList.toggle('brs2')
+  toggleButton.classList.toggle('right')
 })
 
 // Navbar Shrink
@@ -72,14 +79,19 @@ testNext.addEventListener('click', () => {
 })
 
 // Accordion
-let accordion = document.querySelectorAll("#box")
-let span = document.querySelectorAll("span")
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-for (i of accordion) {
-  accordion.addEventListener("click", () => {
-    span.style.display = "block"
-  })
-
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
 
 
@@ -93,3 +105,4 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 })
+
