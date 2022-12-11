@@ -206,8 +206,8 @@ header {
     transform: rotate(-45deg) translate(-8px);
   }
 }
-.ul {
-  z-index: 999999999999 !important;
+.index {
+  z-index: -99999 !important;
 }
 
 /*FONT*/
@@ -366,8 +366,8 @@ header {
     transform: rotate(-45deg) translate(-8px);
   }
 }
-.ul {
-  z-index: 999999999999 !important;
+.index {
+  z-index: -99999 !important;
 }
 
 button {
@@ -714,8 +714,9 @@ button {
 }
 .products .main-pic {
   width: 100%;
-  max-height: 800px;
+  max-height: 617px;
   height: 100%;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 945px) {
@@ -735,7 +736,8 @@ button {
 .indicators img {
   max-width: 100% !important;
   width: 210px !important;
-  max-height: 150px !important;
+  max-height: 170px !important;
+  height: 100%;
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
@@ -980,18 +982,17 @@ button {
   background-color: #e9e9e9;
   color: #000;
 }
-#faq .faq__box .active {
-  transition: 0.5s;
-}
 #faq .faq__box .accordion:after {
   content: "+";
   color: #777;
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  transition: 0.5s;
 }
 #faq .faq__box .active:after {
   content: "+";
+  transition: 0.5s;
   transform: rotate(45deg);
 }
 #faq .faq__box .panel {

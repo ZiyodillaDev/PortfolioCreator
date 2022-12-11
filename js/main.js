@@ -4,6 +4,7 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 const bar3 = document.querySelector(".bar3")
 const bars1 = document.querySelector(".bars1")
 const bars2 = document.querySelector(".bars2")
+const zIndex = document.querySelectorAll(".edu")
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
@@ -11,6 +12,9 @@ toggleButton.addEventListener('click', () => {
   bars1.classList.toggle('brs1')
   bars2.classList.toggle('brs2')
   toggleButton.classList.toggle('right')
+  for(i of zIndex){
+    i.classList.toggle('index')
+  }
 })
 
 // Navbar Shrink

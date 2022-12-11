@@ -344,8 +344,9 @@
 
     & .main-pic {
         width: 100%;
-        max-height: 800px;
+        max-height: 617px;
         height: 100%;
+        padding-bottom: 20px;
     }
 }
 
@@ -367,7 +368,8 @@
         max-width: 100% !important;
         // min-width: 210px !important;
         width: 210px !important;
-        max-height: 150px !important;
+        max-height: 170px !important;
+        height: 100%;
         object-fit: cover !important;
     }
 }
@@ -657,9 +659,6 @@
                 color: #000;
               }
 
-              .active{
-                transition: $transition-time;
-              }
               
               .accordion:after {
                 content: '\002B';
@@ -667,10 +666,12 @@
                 font-weight: bold;
                 float: right;
                 margin-left: 5px;
+                transition: $transition-time;
               }
               
               .active:after {
                 content: '\002B';
+                transition: $transition-time;
                     transform: rotate(45deg)
               }
               
